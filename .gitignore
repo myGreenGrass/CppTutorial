@@ -20,3 +20,6 @@
 .gitattributes
 # 忽略文件
 track
+
+# 忽略临时文件
+enc_temp_folder/
