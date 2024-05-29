@@ -29,7 +29,7 @@ public:
 	UMoveComponent();
 
 	// 声明一个蓝图可调用的函数 EnableMovement，用于启用或禁用移动：
-		UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable)
 	void EnableMovement(bool ShouldMove);
 
 	// 声明一个蓝图可调用的函数 ResetMovement，用于重置移动。
