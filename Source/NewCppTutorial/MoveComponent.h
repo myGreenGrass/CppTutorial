@@ -54,11 +54,11 @@ private:
 
 	// 声明一个属性 MoveOffset，表示移动偏移量：
 	UPROPERTY(EditAnywhere)
-	FVector MoveOffset;
+	FVector MoveOffset = FVector(0,500,200);
 
 	// 声明一个属性 Speed，表示移动速度，默认值为 1.0f。
 	UPROPERTY(EditAnywhere)
-	float Speed = 1.0f;
+	float Speed = 1.0f * 250;
 
 	// 声明一个属性 MoveEnable，表示是否启用移动，默认值为 true。
 	UPROPERTY(EditAnywhere)
