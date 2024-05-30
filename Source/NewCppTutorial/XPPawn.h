@@ -14,6 +14,15 @@ class NEWCPPTUTORIAL_API AXPPawn : public APawn
 	GENERATED_BODY()
 
 public:
+	// Mesh being dispayed
+	UPROPERTY(EditDefaultsOnly)
+	UStaticMeshComponent* PlayerMesh;
+
+	// Camera to view the scene
+	UPROPERTY(EditDefaultsOnly)
+	UCameraComponent* PlayerCamera;
+
+public:
 	// Sets default values for this pawn's properties
 	AXPPawn();
 
@@ -28,20 +37,14 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 private:
-	// turn move
 	void MoveFB(float Value);
-	// forword left move
 	void MoveLR(float Value);
+	void Rotate(float Value);
 
 private:
-	// Mesh being dispayed
-	UPROPERTY(EditDefaultsOnly)
-	UStaticMeshComponent* PlayerMesh;
+	UPROPERTY(EditAnywhere)
+	float MoveSpeed = 1.f;
 
-	// Camera to view the scene
-	UPROPERTY(EditDefaultsOnly)
-	UCameraComponent* PlayerCamera;
-
-
-
+	UPROPERTY(EditAnywhere)
+	float RotationSpeed = 1.f;
 };
