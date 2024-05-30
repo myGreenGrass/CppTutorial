@@ -13,6 +13,6 @@ void ANewCppTutorialGameModeBase::InitGameState()
     {
         // 更新为自定义的实现 
         //DefaultPawnClass = AXPPawn::StaticClass();
-        DefaultPawnClass = CustomXPPawnClass;
+        DefaultPawnClass = CustomXPCharacterClass;
     }
 }

@@ -8,8 +8,10 @@
 #include "GameFramework/GameModeBase.h"
 // 包含DefaultPawn类的头文件
 #include "GameFramework/DefaultPawn.h"
-
+// 包含 XPPawn类
 #include "XPPawn.h"
+// 包含 Character类
+#include "XPCharacter.h"
 // 生成的头文件
 #include "NewCppTutorialGameModeBase.generated.h"
 
@@ -28,5 +30,7 @@ public:
 private:
 	// 编辑时可设置且不可清除的属性，表示自定义的XPCharacter类
 	UPROPERTY(EditAnywhere, NoClear)
-	TSubclassOf<AXPPawn> CustomXPPawnClass = AXPPawn::StaticClass();
+	TSubclassOf<AXPCharacter> CustomXPCharacterClass = AXPCharacter::StaticClass();
+	//TSubclassOf<AXPPawn> CustomXPPawnClass = AXPPawn::StaticClass();
+
 };
