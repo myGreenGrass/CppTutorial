@@ -35,10 +35,10 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	float CurrentTimeFactor = 1.0f;
 	
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite)
 	float NormalTimeFactor = 1.0f;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite)
 	float ReverseTimeFactor = -3.0f;
 
 };
