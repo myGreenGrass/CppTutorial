@@ -23,3 +23,7 @@ track
 
 # 忽略临时文件
 enc_temp_folder/
+
+# 忽略插件生成文件
+/Plugins/PrimitiveFountainPlugin/Binaries
+/Plugins/PrimitiveFountainPlugin/Intermediate
